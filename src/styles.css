@@ -1,0 +1,126 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #111111;
+  --color-panel: #161616;
+  --color-ink: #ffffff;
+  --color-ink-dim: #8a8a8a;
+  --color-ink-faint: #5c5c5c;
+  --color-accent: #5c7a99;
+  --color-line: rgb(255 255 255 / 0.1);
+  --color-line-strong: rgb(255 255 255 / 0.18);
+
+  --font-serif: Georgia, "Iowan Old Style", "Times New Roman", serif;
+  --font-sans: "Inter", "Helvetica Neue", Arial, ui-sans-serif, system-ui, sans-serif;
+
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 8px;
+
+  --text-micro: 0.75rem;
+  --text-caption: 0.8125rem;
+  --text-body: 0.9375rem;
+  --text-lead: 1rem;
+  --text-section: 1.625rem;
+  --text-display: clamp(2rem, 4.6vw, 3.125rem);
+
+  --tracking-logo: 0.45em;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background: var(--color-bg);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+}
+
+.logo-mark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: max-content;
+  max-width: 100%;
+  color: #ffffff;
+  line-height: 1;
+  text-align: center;
+}
+
+.logo-mark-aa {
+  position: relative;
+  display: block;
+  width: 0.98em;
+  height: 0.88em;
+  font-family: "Bodoni Moda", "Cormorant Garamond", Georgia, serif;
+  font-weight: 400;
+  font-optical-sizing: auto;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: 0;
+  font-synthesis: none;
+}
+
+.logo-mark-aa .a-left,
+.logo-mark-aa .a-right {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.logo-mark-aa .a-right {
+  left: 0.16em;
+}
+
+.logo-mark-name {
+  display: block;
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.42em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  padding-right: 0.42em;
+  margin-top: 0.55em;
+}
+
+.logo-mark-header .logo-mark-aa {
+  font-size: 1.85rem;
+}
+
+.logo-mark-header .logo-mark-name {
+  font-size: 0.42rem;
+}
+
+.logo-mark-hero .logo-mark-aa {
+  font-size: clamp(3.25rem, 9vw, 5.5rem);
+}
+
+.logo-mark-hero .logo-mark-name {
+  font-size: clamp(0.58rem, 1.5vw, 0.92rem);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

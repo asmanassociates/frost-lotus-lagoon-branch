@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Asman",
+      "hasCanvas": false,
+      "bodyTextLen": 3882,
+      "bodyTextHash": "8ae4a35d19879b8e012f8e5a9aae5431a971193686bdbcf67331b1892d04a401",
+      "bodyTextPrefix": "A A ASMAN ASSOCIATES Structure Logic Engine Verification A A ASM",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Asman",
+      "hasCanvas": false,
+      "bodyTextLen": 3882,
+      "bodyTextHash": "8ae4a35d19879b8e012f8e5a9aae5431a971193686bdbcf67331b1892d04a401",
+      "bodyTextPrefix": "A A ASMAN ASSOCIATES Structure Logic Engine Verification A A ASM",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
